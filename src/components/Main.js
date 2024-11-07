@@ -1,10 +1,11 @@
+import React from 'react';
 import { useState } from 'react';
 import Counter from './Counter';
 import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './NavBar';
 
 function Main() {
-  
   const [counters, setCounters] = useState([0, 0, 0]);
 
   
@@ -34,6 +35,7 @@ function Main() {
 
   return (
     <div className="main">
+       <NavBar totalCounters={counters.length} />
       
       <button className="btn btn-success m-3" onClick={handleReset}>
         Refresh All

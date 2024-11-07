@@ -1,18 +1,12 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const NavBar = ({ totalCounters }) => {
   return (
-    <nav className="navbar navbar-light bg-light">
-      <div className="navbar-brand">
-        <span
-          className="badge badge-pill badge-info m-2"
-          style={{ width: 50, fontSize: "24px" }}
-        >
-          {totalCounters}
-        </span>
-        Items
+    
+      <div>
+          <button className="btn btn-dark">{totalCounters}</button>
       </div>
-    </nav>
   );
 };
 
